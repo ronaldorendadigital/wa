@@ -1,6 +1,6 @@
 #!/bin/bash
 echo " "
-echo "ATUALIZANDO PARA A VERSÃO MAIS RECENTE DO PRESS TICKET!"
+echo "ATUALIZANDO PARA A VERSÃO MAIS RECENTE DO WHATENDE!"
 echo " "
 sleep 2
 
@@ -69,5 +69,5 @@ sleep 2
 pm2 restart all
 
 echo " "
-echo "PRESS TICKET ATUALIZADO COM SUCESSO!!!"
+echo "WHATENDE ATUALIZADO COM SUCESSO!!!"
 echo " "
