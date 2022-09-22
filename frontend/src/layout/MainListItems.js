@@ -16,7 +16,6 @@ import ContactPhoneOutlinedIcon from "@material-ui/icons/ContactPhoneOutlined";
 import AccountTreeOutlinedIcon from "@material-ui/icons/AccountTreeOutlined";
 import QuestionAnswerOutlinedIcon from "@material-ui/icons/QuestionAnswerOutlined";
 import CodeIcon from '@material-ui/icons/Code';
-import MenuBookIcon from '@material-ui/icons/MenuBook';
 import VpnKeyRoundedIcon from '@material-ui/icons/VpnKeyRounded';
 
 import { i18n } from "../translate/i18n";
@@ -145,13 +144,6 @@ const MainListItems = (props) => {
               primary={i18n.t("mainDrawer.listItems.api")}
               icon={
                 <CodeIcon />
-              }
-            />
-            <ListItemLink
-              to="/apidocs"
-              primary={i18n.t("mainDrawer.listItems.apidocs")}
-              icon={
-                <MenuBookIcon />
               }
             />
             <ListItemLink
