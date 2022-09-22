@@ -36,7 +36,7 @@ const messages = {
       dashboard: {
         charts: {
           perDay: {
-            title: "Tickets hoje: ",
+            title: "atendimentos hoje: ",
           },
         },
         messages: {
@@ -128,8 +128,8 @@ const messages = {
           deleteTitle: "Deletar ",
           deleteAllTitle: "Deletar Todos",
           importTitle: "Importar contatos",
-          deleteMessage: "Tem certeza que deseja deletar este contato? Todos os tickets relacionados serão perdidos.",
-          deleteAllMessage: "Tem certeza que deseja deletar todos os contatos? Todos os tickets relacionados serão perdidos.",
+          deleteMessage: "Tem certeza que deseja deletar este contato? Todos os atendimentos relacionados serão perdidos.",
+          deleteAllMessage: "Tem certeza que deseja deletar todos os contatos? Todos os atendimentos relacionados serão perdidos.",
           importMessage: "Deseja importar todos os contatos do telefone?",
         },
         buttons: {
@@ -227,7 +227,7 @@ const messages = {
         success: "Usuário salvo com sucesso.",
       },
       chat: {
-        noTicketMessage: "Selecione um ticket para começar a conversar.",
+        noTicketMessage: "Selecione um atendimento para começar a conversar.",
       },
       ticketsManager: {
         buttons: {
@@ -239,7 +239,7 @@ const messages = {
       },
       tickets: {
         toasts: {
-          deleted: "O ticket que você estava foi deletado.",
+          deleted: "O atendimento que você estava foi deletado.",
         },
         notification: {
           message: "Mensagem de",
@@ -250,14 +250,14 @@ const messages = {
           search: { title: "Busca" },
         },
         search: {
-          placeholder: "Buscar tickets e mensagens",
+          placeholder: "Buscar atendimentos e mensagens",
         },
         buttons: {
           showAll: "Todos",
         },
       },
       transferTicketModal: {
-        title: "Transferir Ticket",
+        title: "Transferir atendimento",
         fieldLabel: "Digite para buscar usuários",
         fieldConnectionLabel: "Transferir para conexão",
         fieldQueuePlaceholder: "Transferir para o Setor",
@@ -272,7 +272,7 @@ const messages = {
         pendingHeader: "Aguardando",
         assignedHeader: "Atendendo",
         noTicketsTitle: "Nada aqui!",
-        noTicketsMessage: "Nenhum ticket encontrado com esse status ou termo pesquisado",
+        noTicketsMessage: "Nenhum atendimento encontrado com esse status ou termo pesquisado",
         connectionTitle: "Conexão que está sendo utilizada atualmente.",
         items:{
           queueless: "Sem Setor",
@@ -293,7 +293,7 @@ const messages = {
         },
       },
       newTicketModal: {
-        title: "Criar Ticket",
+        title: "Criar atendimento",
         fieldLabel: "Digite para pesquisar o contato",
         add: "Adicionar",
         buttons: {
@@ -305,7 +305,7 @@ const messages = {
         listItems: {
           dashboard: "Dashboard",
           connections: "Conexões",
-          tickets: "Tickets",
+          tickets: "atendimentos",
           contacts: "Contatos",
           quickAnswers: "Respostas Rápidas",
           queues: "Setores",
@@ -348,7 +348,7 @@ const messages = {
         },
         confirmationModal: {
           deleteTitle: "Excluir",
-          deleteMessage: "Você tem certeza? Essa ação não pode ser revertida! Os tickets desse setor continuarão existindo, mas não terão mais nenhuma setor atribuído.",
+          deleteMessage: "Você tem certeza? Essa ação não pode ser revertida! Os atendimentos desse setor continuarão existindo, mas não terão mais nenhuma setor atribuído.",
         },
       },
       queueSelect: {
@@ -394,7 +394,7 @@ const messages = {
         },
         confirmationModal: {
           deleteTitle: "Excluir",
-          deleteMessage: "Todos os dados do usuário serão perdidos. Os tickets abertos deste usuário serão movidos para a espera.",
+          deleteMessage: "Todos os dados do usuário serão perdidos. Os atendimentos abertos deste usuário serão movidos para a espera.",
         },
       },
       settings: {
@@ -434,8 +434,8 @@ const messages = {
             },
           },
           closeTicketApi: {
-            name: "Encerrar Ticket enviado API",
-            note: "Fecha automaticamente o ticket quando enviado por API",
+            name: "Encerrar atendimento enviado API",
+            note: "Fecha automaticamente o atendimento quando enviado por API",
             options: {
               enabled: "Ativado",
               disabled: "Desativado",
@@ -450,8 +450,8 @@ const messages = {
               },
           },
           timeCreateNewTicket: {
-            name: "Cria novo ticket após",
-            note: "Selecione o tempo que será necessário para abrir um novo ticket, caso o cliente entre em contatos novamente",
+            name: "Cria novo atendimento após",
+            note: "Selecione o tempo que será necessário para abrir um novo atendimento, caso o cliente entre em contatos novamente",
             options: {
               "10": "10 Segundos",
               "30": "30 Segundos",
@@ -483,7 +483,7 @@ const messages = {
       },
       messagesInput: {
         placeholderOpen: "Digite uma mensagem",
-        placeholderClosed: "Reabra ou aceite esse ticket para enviar uma mensagem.",
+        placeholderClosed: "Reabra ou aceite esse atendimento para enviar uma mensagem.",
         signMessage: "Assinar",
       },
       contactDrawer: {
@@ -497,8 +497,8 @@ const messages = {
         delete: "Deletar",
         transfer: "Transferir",
         confirmationModal: {
-          title: "Deletar o ticket do contato",
-          message: "Atenção! Todas as mensagens relacionadas ao ticket serão perdidas.",
+          title: "Deletar o atendimento do contato",
+          message: "Atenção! Todas as mensagens relacionadas ao atendimento serão perdidas.",
         },
         buttons: {
           delete: "Excluir",
@@ -529,18 +529,18 @@ const messages = {
         ERR_INVALID_CREDENTIALS: "Erro de autenticação. Por favor, tente novamente.",
         ERR_SENDING_WAPP_MSG: "Erro ao enviar mensagem do WhatsApp. Verifique a página de conexões.",
         ERR_DELETE_WAPP_MSG: "Não foi possível excluir a mensagem do WhatsApp.",
-        ERR_OTHER_OPEN_TICKET: "Já existe um ticket aberto para este contato.",
+        ERR_OTHER_OPEN_TICKET: "Já existe um atendimento aberto para este contato.",
         ERR_SESSION_EXPIRED: "Sessão expirada. Por favor entre.",
         ERR_USER_CREATION_DISABLED: "A criação do usuário foi desabilitada pelo administrador.",
         ERR_NO_PERMISSION: "Você não tem permissão para acessar este recurso.",
         ERR_DUPLICATED_CONTACT: "Já existe um contato com este número.",
         ERR_NO_SETTING_FOUND: "Nenhuma configuração encontrada com este ID.",
         ERR_NO_CONTACT_FOUND: "Nenhum contato encontrado com este ID.",
-        ERR_NO_TICKET_FOUND: "Nenhum ticket encontrado com este ID.",
+        ERR_NO_TICKET_FOUND: "Nenhum atendimento encontrado com este ID.",
         ERR_NO_USER_FOUND: "Nenhum usuário encontrado com este ID.",
         ERR_NO_WAPP_FOUND: "Nenhum WhatsApp encontrado com este ID.",
         ERR_CREATING_MESSAGE: "Erro ao criar mensagem no banco de dados.",
-        ERR_CREATING_TICKET: "Erro ao criar ticket no banco de dados.",
+        ERR_CREATING_TICKET: "Erro ao criar atendimento no banco de dados.",
         ERR_FETCH_WAPP_MSG: "Erro ao buscar a mensagem no WhatsApp, talvez ela seja muito antiga.",
         ERR_QUEUE_COLOR_ALREADY_EXISTS: "Esta cor já está em uso, escolha outra.",
         ERR_WAPP_GREETING_REQUIRED: "A mensagem de saudação é obrigatório quando há mais de um Setor.",
