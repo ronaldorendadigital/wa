@@ -1,3 +1,4 @@
+import FrontPage from "../pages/Home";
 import React from "react";
 import { BrowserRouter, Switch } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
@@ -26,6 +27,7 @@ const Routes = () => {
     <BrowserRouter>
       <AuthProvider>
         <Switch>
+          <Route exact path="/home" component={FrontPage} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/signup" component={Signup} />
           <WhatsAppsProvider>
